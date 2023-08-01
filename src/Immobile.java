@@ -16,8 +16,21 @@ public class Immobile {
         this.personeInteressate = 0;
 
     }
+    public void incrementaPersoneInteressate() {
+        personeInteressate++;
+    }
 
-
+    @Override
+    public String toString() {
+        return "Immobile{" +
+                "codice='" + codice + '\'' +
+                ", indirizzo='" + indirizzo + '\'' +
+                ", cap='" + cap + '\'' +
+                ", citta='" + citta + '\'' +
+                ", superficie=" + superficie +
+                ", personeInteressate=" + personeInteressate +
+                '}';
+    }
 }
 
 

@@ -1,9 +1,9 @@
-public class Box extends Immobile{
-    int numPostiAuto;
-    public Box(String codice, String indirizzo, String cap, String citta, int superficie) {
+public class Box extends Immobile {
+    private int numPostiAuto;
+
+    public Box(String codice, String indirizzo, String cap, String citta, int superficie, int numPostiAuto) {
         super(codice, indirizzo, cap, citta, superficie);
         this.numPostiAuto = numPostiAuto;
-
     }
 
     @Override

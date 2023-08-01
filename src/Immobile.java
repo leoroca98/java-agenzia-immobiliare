@@ -2,10 +2,9 @@ public class Immobile {
     protected String codice;
     protected String indirizzo;
     protected String cap;
-
     protected String citta;
     protected int superficie;
-    protected int personeInteressate;
+    protected int numPersoneInteressate;
 
     public Immobile(String codice, String indirizzo, String cap, String citta, int superficie) {
         this.codice = codice;
@@ -13,11 +12,15 @@ public class Immobile {
         this.cap = cap;
         this.citta = citta;
         this.superficie = superficie;
-        this.personeInteressate = 0;
-
+        this.numPersoneInteressate = 0;
     }
+
     public void incrementaPersoneInteressate() {
-        personeInteressate++;
+        numPersoneInteressate++;
+    }
+
+    public void reimpostaSuperfici(int nuovaSuperficie) {
+        this.superficie = nuovaSuperficie;
     }
 
     @Override
@@ -28,11 +31,7 @@ public class Immobile {
                 ", cap='" + cap + '\'' +
                 ", citta='" + citta + '\'' +
                 ", superficie=" + superficie +
-                ", personeInteressate=" + personeInteressate +
+                ", numPersoneInteressate=" + numPersoneInteressate +
                 '}';
     }
 }
-
-
-
-
